@@ -2,7 +2,7 @@ var nunjucks = require('nunjucks'),
     expect   = require('chai').expect(),
     filter   = require('../lib/main.js');
 
-var template = '{% markdown %} # Hello! {% endmarkdown %}';
+var template = '{% markdown %} # Hello! This is markdown! {% endmarkdown %}';
 var env = nunjucks.configure('views');
 
 filter.register(env);
