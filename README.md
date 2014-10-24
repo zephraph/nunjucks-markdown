@@ -1,10 +1,8 @@
 # nunjucks-markdown
 
-> A markdown extension for nunjucks
+A nunjuck extension that adds a markdown tag
 
 ## Install
-
-_Note: Not yet published to NPM_
 
 ``` bash
 npm install marked --save
@@ -35,7 +33,7 @@ Hello World
 
 ## Markdown Options
 
-**Nunjucks-markdown** uses [marked](https://github.com/chjj/marked) as its parser. Marked can be configured by passing in an options object to the register function.
+**Nunjucks-markdown** uses marked as its parser. Marked can be configured by passing in an options object to the register function.
 
 ``` js
 var marked = require('marked');
