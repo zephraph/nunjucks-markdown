@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-markdown",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "A markdown extension for nunjucks",
   "main": "./lib/main.js",
   "repository": {
@@ -12,6 +12,12 @@
     "markdown"
   ],
   "author": "Zephraph",
+  "contributors": [
+    {
+      "name": "Gary Green",
+      "url": "https://github.com/garygreen"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zephraph/nunjucks-filter-block/issues"
