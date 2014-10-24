@@ -1,5 +1,6 @@
 var nunjucks = require('nunjucks'),
     expect   = require('chai').expect,
+    marked   = require('marked'),
     filter   = require('../index');
 
 var env = nunjucks.configure('views');
@@ -10,10 +11,11 @@ describe('markdown tag with body', function() {
 
 	it('should parse basic markdown', function() {
 
-		var tmpl = '{% markdown %} # Hello! This is markdown! {% endmarkdown %}';
+    var testString = '# Hello! This is markdown!';
+		var tmpl = '{% markdown %}' + testString + '{% endmarkdown %}';
 		var result = env.renderString(tmpl);
 
-		return expect(result).to.equal('<h1 id="hello-this-is-markdown-">Hello! This is markdown!</h1>\n');
+		return expect(result).to.equal(marked(testString));
 	});
 
 });
