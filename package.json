@@ -13,10 +13,7 @@
   ],
   "author": "Zephraph",
   "contributors": [
-    {
-      "name": "Gary Green",
-      "url": "https://github.com/garygreen"
-    }
+    "Gary Green (https://github.com/garygreen)"
   ],
   "license": "MIT",
   "bugs": {
@@ -29,5 +26,11 @@
   },
   "dependencies": {
     "marked": "^0.3.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
   }
 }

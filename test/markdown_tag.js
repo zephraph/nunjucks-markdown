@@ -1,12 +1,12 @@
 var nunjucks = require('nunjucks'),
     expect   = require('chai').expect,
-    filter   = require('../lib/main.js');
+    filter   = require('../index');
 
 var env = nunjucks.configure('views');
 
 filter.register(env);
 
-describe('markdown tag', function() {
+describe('markdown tag with body', function() {
 
 	it('should parse basic markdown', function() {
 
