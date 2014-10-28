@@ -1,11 +1,11 @@
 {
   "name": "nunjucks-markdown",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A markdown extension for nunjucks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zephraph/nunjucks-filter-block.git"
+    "url": "https://github.com/zephraph/nunjucks-markdown.git"
   },
   "keywords": [
     "nunjucks",
@@ -17,9 +17,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zephraph/nunjucks-filter-block/issues"
+    "url": "https://github.com/zephraph/nunjucks-markdown/issues"
   },
-  "homepage": "https://github.com/zephraph/nunjucks-filter-block",
+  "homepage": "https://github.com/zephraph/nunjucks-markdown",
   "devDependencies": {
     "chai": "^1.9.2",
     "nunjucks": "^1.1.0"
