@@ -6,5 +6,5 @@ module.exports.register = function(env, opts) {
   if(typeof(opts) !== 'undefined')
     marked.setOptions(opts);
 
-  env.addExtension('markdown', new Markdown(marked));
+  env.addExtension('markdown', new Markdown(marked, env));
 };

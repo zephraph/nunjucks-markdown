@@ -31,10 +31,18 @@ Hello World
 {% endmarkdown %}
 ```
 
+You can also provide the markdown tag with a template to render
+
+```
+{% markdown "post.md" %}
+```
+_Note: This method doesn't require a closing tag_
+
 As you would expect, you can add tags inside your markdown tag
 ```
 {% markdown %}
-{% include 'myTemplate.html' %}
+{% include 'post1.md' %}
+{% include 'post2.md' %}
 {% endmarkdown %}
 ```
 
@@ -59,3 +67,7 @@ markdown.register(env, {
 
 For more information configuration options, checkout [marked](https://github.com/chjj/marked).
 
+## Plans for the future
+
+The last thing I really want to accomplish with this extension is to give the user the ability to specify
+which markdown engine they want to use. I'll probably just set marked as the fallback if none is provided. 

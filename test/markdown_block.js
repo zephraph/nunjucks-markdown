@@ -15,7 +15,7 @@ describe('markdown block tag', function() {
   var dir = 'test/';
   var md_tmpl = 'templates/markdown_only.html';
   var md_tmpl_with_var = 'templates/markdown_with_vars.html';
-  var md_tmpl_include = 'templates/markdown_include.html';
+  var md_tmpl_include = 'templates/markdown_block_include.html';
   var md_only = 'markdown/markdown_only.md';
 
   it('should parse basic markdown', function() {
