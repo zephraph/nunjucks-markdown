@@ -1,13 +1,10 @@
-(function() {
-  var Markdown = require('./lib/markdown_tag');
+var Markdown = require('./lib/markdown_tag');
+var marked = require('marked');
 
-  module.exports.register = function(env, opts) {
-    var marked = require('marked');
+module.exports.register = function(env, opts) {
 
-    if(typeof(opts) !== 'undefined')
-      marked.setOptions(opts);
+  if(typeof(opts) !== 'undefined')
+    marked.setOptions(opts);
 
-    env.addExtension('markdown', new Markdown(marked));
-  };
-
-}).call(this);
+  env.addExtension('markdown', new Markdown(marked));
+};
