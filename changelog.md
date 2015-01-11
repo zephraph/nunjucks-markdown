@@ -9,3 +9,10 @@ Any improvements made to this project will be documented here
 ### Added
 - A new test to ensure inline parsing works
 - This changelog! 
+
+## [0.6.1] - 2015-1-11
+### Added
+- New templates for tests
+
+### Changed
+- Cleaned up tests
