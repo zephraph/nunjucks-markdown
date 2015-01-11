@@ -16,3 +16,4 @@ Any improvements made to this project will be documented here
 
 ### Changed
 - Cleaned up tests
+- Updated readme to reflect latest changes

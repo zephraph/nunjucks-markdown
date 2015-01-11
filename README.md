@@ -31,6 +31,13 @@ Hello World
 {% endmarkdown %}
 ```
 
+As you would expect, you can add tags inside your markdown tag
+```
+{% markdown %}
+{% include 'myTemplate.html' %}
+{% endmarkdown %}
+```
+
 ## Markdown Options
 
 **Nunjucks-markdown** uses marked as its parser. Marked can be configured by passing in an options object to the register function.
