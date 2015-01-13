@@ -1,7 +1,7 @@
 var nunjucks = require('nunjucks'),
     expect   = require('chai').expect,
     marked   = require('marked'),
-    filter   = require('../index'),
+    markdown = require('../index'),
     fs       = require('fs'),
     path     = require('path');
 
@@ -9,7 +9,7 @@ describe('markdown block tag', function() {
 
   // Setup
   var env = nunjucks.configure('test');
-  filter.register(env);
+  markdown.register(env);
 
   // Files
   var dir = 'test/';
