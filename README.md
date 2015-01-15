@@ -19,7 +19,7 @@ var nunjucks = require('nunjucks'),
 
 var env = nunjucks.configure('views');
 
-// The second argument can be any function renders markdown
+// The second argument can be any function that renders markdown
 markdown.register(env, marked);
 ```
 
