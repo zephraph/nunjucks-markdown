@@ -1,6 +1,6 @@
 # nunjucks-markdown
 
-A nunjuck extension that adds a markdown tag
+A nunjuck extension that adds a markdown tag. This plugin allows you to choose your own markdown renderer. 
 
 ## Install
 
@@ -14,11 +14,13 @@ Register the extension with nunjucks
 
 ``` js
 var nunjucks = require('nunjucks'),
-    markdown = require('nunjucks-markdown');
+    markdown = require('nunjucks-markdown'),
+    marked = require('marked');
 
 var env = nunjucks.configure('views');
 
-markdown.register(env);
+// The second argument can be any function renders markdown
+markdown.register(env, marked);
 ```
 
 Add markdown to your templates
@@ -48,12 +50,12 @@ As you would expect, you can add tags inside your markdown tag
 
 ## Markdown Options
 
-**Nunjucks-markdown** uses marked as its parser. Marked can be configured by passing in an options object to the register function.
+**Nunjucks-markdown** doesn't require you to use any particular markdown renderer. If you were to use marked here's a good example of how it could be configured. 
 
 ``` js
 var marked = require('marked');
 
-markdown.register(env, {
+marked.setOptions({
   renderer: new marked.Renderer(),
   gfm: true,
   tables: true,
@@ -63,11 +65,8 @@ markdown.register(env, {
   smartLists: true,
   smartypants: false
 });
+
+markdown.register(env, marked);
 ```
 
 For more information configuration options, checkout [marked](https://github.com/chjj/marked).
-
-## Plans for the future
-
-The last thing I really want to accomplish with this extension is to give the user the ability to specify
-which markdown engine they want to use. I'll probably just set marked as the fallback if none is provided. 
