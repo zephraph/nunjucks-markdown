@@ -9,7 +9,7 @@ describe('markdown block tag', function() {
 
   // Setup
   var env = nunjucks.configure('test');
-  markdown.register(env);
+  markdown.register(env, marked);
 
   // Files
   var dir = 'test/';

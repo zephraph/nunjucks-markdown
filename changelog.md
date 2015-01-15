@@ -21,4 +21,14 @@ Any improvements made to this project will be documented here
 ## [0.7.0] - 2015-1-11
 ### Added
 - Can now provide a template to the markdown tag. i.e. ```{% markdown "post.md" %}```
-- new tests
+- New tests
+
+## [0.7.1] - 2015-1-14
+### Changed
+- Nunjucks is now a peer dependency instead of a direct dependency
+
+## [1.0.0] - 2015-1-14
+### Changed
+- Marked is no longer a direct dependency. A function to render the markdown must be passed into the register function now.
+- Updated tests
+- Updated changelog
