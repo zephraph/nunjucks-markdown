@@ -1,6 +1,6 @@
-# nunjucks-markdown
+# nunjucks-markdown [![Build Status](https://travis-ci.org/zephraph/nunjucks-markdown.svg)](https://travis-ci.org/zephraph/nunjucks-markdown)
 
-A nunjuck extension that adds a markdown tag. This plugin allows you to choose your own markdown renderer. 
+A nunjuck extension that adds a markdown tag. This plugin allows you to choose your own markdown renderer.
 
 ## Install
 
@@ -50,7 +50,7 @@ As you would expect, you can add tags inside your markdown tag
 
 ## Markdown Options
 
-**Nunjucks-markdown** doesn't require you to use any particular markdown renderer. If you were to use marked here's a good example of how it could be configured. 
+**Nunjucks-markdown** doesn't require you to use any particular markdown renderer. If you were to use marked here's a good example of how it could be configured.
 
 ``` js
 var marked = require('marked');
