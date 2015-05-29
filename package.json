@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/zephraph/nunjucks-markdown",
   "devDependencies": {
-    "chai": "^1.9.2"
+    "chai": "^1.9.2",
+    "marked": "^0.3.3"
   },
   "dependencies": {
     "nunjucks": "^1.1.0"
