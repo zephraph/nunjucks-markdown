@@ -42,5 +42,12 @@ describe('markdown block tag', function() {
     return expect(result).to.equal(expected);
   });
 
-});
+  it('should render the same regardless of tab depth', function() {
 
+    var result   = env.render('templates/markdown_at_varying_depths.html').replace(/\r?\n/g, '').replace(/\s/g, '');
+    var expected = fs.readFileSync(dir + 'templates/result_at_varying_depths.html', 'utf-8').replace(/\r?\n/g, '').replace(/\s/g, '');
+
+    return expect(result).to.equal(expected);
+  });
+
+});

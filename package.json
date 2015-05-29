@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-markdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A markdown extension for nunjucks",
   "main": "index.js",
   "repository": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/zephraph/nunjucks-markdown",
   "devDependencies": {
     "chai": "^1.9.2",
+    "mocha": "^2.2.5",
     "marked": "^0.3.3"
   },
   "dependencies": {
