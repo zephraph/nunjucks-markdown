@@ -14,12 +14,21 @@ describe('markdown include tag', function() {
   // Files
   var dir = 'test/';
   var md_only = 'markdown/markdown_only.md';
+  var md_tmpl_include_with_var = 'templates/markdown_include_with_vars.html';
   var md_tmpl = 'templates/markdown_only.html';
   var md_tmpl_include = 'templates/markdown_include.html';
 
   it('should import a markdown file', function() {
 
     var result   = env.render(md_tmpl_include).slice(0, -1);
+    var expected = marked(fs.readFileSync(dir + md_only, 'utf-8'));
+
+    return expect(result).to.equal(expected);
+  });
+
+  it('should import a markdown file with variables', function() {
+
+    var result   = env.render(md_tmpl_include_with_var, { test: 'this is just a test' }).slice(0, -1);
     var expected = marked(fs.readFileSync(dir + md_only, 'utf-8'));
 
     return expect(result).to.equal(expected);
