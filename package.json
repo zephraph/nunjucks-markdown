@@ -25,8 +25,8 @@
     "mocha": "^2.2.5",
     "marked": "^0.3.3"
   },
-  "dependencies": {
-    "nunjucks": "^1.1.0"
+  "peerDependencies": {
+    "nunjucks": "^2.3.0"
   },
   "directories": {
     "test": "test"
