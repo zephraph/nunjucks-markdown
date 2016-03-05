@@ -26,6 +26,9 @@
     "marked": "^0.3.3",
     "nunjucks": "^2.3.0"
   },
+  "peerDependencies": {
+    "nunjucks": "^2.3.0"
+  },
   "directories": {
     "test": "test"
   },
