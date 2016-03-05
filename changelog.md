@@ -1,6 +1,13 @@
 # Change Log
 Any improvements made to this project will be documented here
 
+## [2.0.0] - 2016-3-5
+### Fixed
+- included files not getting proper context
+
+### Changed
+- Updated nunjucks dependency
+
 ## [1.1.0] - 2015-5-29
 ### Fixed
 - Now properly respects tab lengths
