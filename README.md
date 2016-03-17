@@ -5,7 +5,7 @@ A nunjuck extension that adds a markdown tag. This plugin allows you to choose y
 ## Install
 
 ``` bash
-npm install marked --save
+npm install nunjucks-markdown --save
 ```
 
 ## Usage
