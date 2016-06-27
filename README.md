@@ -100,3 +100,4 @@ markdown.register(env, marked);
 ```
 
 For more information configuration options, checkout [marked](https://github.com/chjj/marked).
+
