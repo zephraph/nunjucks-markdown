@@ -48,6 +48,36 @@ As you would expect, you can add tags inside your markdown tag
 {% endmarkdown %}
 ```
 
+### Using with Gulp
+
+Gulp requires a little more explicit settings than standard npm. See https://mozilla.github.io/nunjucks/api.html#custom-tags
+
+see example-gulpefile.js based on https://gist.github.com/kerryhatcher/1382950af52f3082ecdc668bba5aa11b
+
+``` js
+var nunjucks = require('nunjucks'),
+    markdown = require('nunjucks-markdown'),
+    marked = require('marked'),
+    gulpnunjucks = require('gulp-nunjucks');
+    
+var templates = 'src/templates'; //Set this as the folder that contains your nunjuck files
+
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(templates));
+
+// The second argument can be any function that renders markdown
+markdown.register(env, marked);
+
+gulp.task('pages', function() {
+    // Gets .html files. see file layout at bottom
+    return gulp.src([templates + '/*.html', templates + '/**/*.html'])
+        // Renders template with nunjucks and marked
+        .pipe(gulpnunjucks.compile("", {env: env}))
+        // output files in dist folder
+        .pipe(gulp.dest(dist))
+});
+```
+
+
 ## Markdown Options
 
 **Nunjucks-markdown** doesn't require you to use any particular markdown renderer. If you were to use marked here's a good example of how it could be configured.
