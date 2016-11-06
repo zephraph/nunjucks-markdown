@@ -1,3 +1,12 @@
 language: node_js
 node_js:
+    - "4"
+    - "5"
+    - "6"
     - "stable"
+before_script:
+  - 'if [ "$NUNJUCKS_VERSION" ]; then npm install nunjucks@$NUNJUCKS_VERSION; fi'
+
+env:
+  - NUNJUCKS_VERSION=^2.3.0
+  - NUNJUCKS_VERSION=^3.0.0
