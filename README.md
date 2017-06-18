@@ -1,5 +1,7 @@
 # nunjucks-markdown [![Build Status](https://travis-ci.org/zephraph/nunjucks-markdown.svg)](https://travis-ci.org/zephraph/nunjucks-markdown)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zephraph/nunjucks-markdown.svg)](https://greenkeeper.io/)
+
 A nunjuck extension that adds a markdown tag. This plugin allows you to choose your own markdown renderer.
 
 ## Install
