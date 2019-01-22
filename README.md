@@ -92,7 +92,7 @@ marked.setOptions({
   gfm: true,
   tables: true,
   breaks: false,
-  pendantic: false,
+  pedantic: false,
   sanitize: true,
   smartLists: true,
   smartypants: false
